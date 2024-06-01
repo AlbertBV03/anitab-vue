@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-navbar toggleable="md" type="dark" class="navbar-custom">
+      <b-container>
+        <b-navbar-brand :to="{name:'home'}" class="navbar-brand-custom">ANITAB</b-navbar-brand>
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav>
+            <b-nav-item :to="{name:'especies'}" class="nav-item-custom">Especies</b-nav-item>
+            <b-nav-item :to="{name:'acercade'}" class="nav-item-custom">Acerca De</b-nav-item>
+            <b-nav-item :to="{name:'contactanos'}" class="nav-item-custom">Contactanos</b-nav-item>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-container>
+    </b-navbar>
+
+    <router-view/>
+
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+.navbar-custom {
+  background-color: #2467C2 !important;
+}
+
+.navbar-brand-custom {
+  color: #fff !important;
+}
+
+.nav-item-custom {
+  color: #fff !important;
 }
 </style>
