@@ -90,7 +90,7 @@
                             Explora el fascinante mundo de los animales acuáticos de Tabasco mientras te sumerges en la riqueza de sus humedales y ríos sinuosos. Esta región única, bendecida con una abundancia de agua, es el hogar de una amplia variedad de especies adaptadas a la vida acuática.
                         </b-card-text>
 
-                        <b-button variant="primary" :to="{name:'especies'}" v-b-popover.hover.top="'Navega a la Galeria de Especies'" title="Ir a Galeria de Especies">Galeria de Especies</b-button>
+                        <b-button variant="primary" :to="{name:'especies'}" v-b-popover.hover.right="'Navega a la Galeria de Especies'" title="Ir a Galeria de Especies">Galeria de Especies</b-button>
                     </b-card>
                 </b-col>
             </b-row>

@@ -17,7 +17,7 @@
                   Los peces son animales vertebrados primariamente acuáticos, generalmente ectotérmicos y con respiración por branquias. Suelen estar recubiertos por escamas, y están dotados de aletas, que permiten su movimiento continuo en los medios acuáticos, y branquias, con las que captan el oxígeno disuelto en el agua.
                 </b-card-text>
   
-                <b-button @click="toggleAccordion1" variant="primary">Galeria de Peces</b-button>
+                <b-button @click="toggleAccordion1" variant="primary" v-b-popover.hover.left="'Abre la Galeria de Peces'" title="Galeria de Peces">Galeria de Peces</b-button>
                 <b-collapse v-model="showAccordion1">
                     <b-card-body>
                     <!-- Inicio de Especies -->
@@ -59,7 +59,7 @@
                 Los reptiles son animales vertebrados que se caracterizan por su piel escamosa y la mayoría de las especies son ovíparas, es decir, ponen huevos. Son ectotérmicos, lo que significa que dependen del ambiente externo para regular su temperatura corporal. Incluyen animales como lagartos, serpientes, tortugas y cocodrilos.
                 </b-card-text>
 
-                <b-button @click="toggleAccordion2" variant="primary">Galeria de Reptiles</b-button>
+                <b-button @click="toggleAccordion2" variant="primary" v-b-popover.hover.left="'Abre la Galeria de los Reptiles'" title="Galeria de los Reptiles">Galeria de Reptiles</b-button>
                 <b-collapse v-model="showAccordion2">
                     <b-card-body>
                     <!-- Inicio de Especies -->
@@ -101,7 +101,7 @@
                 Los mamíferos son animales vertebrados que se caracterizan por tener glándulas mamarias que les permiten alimentar a sus crías con leche. Incluyen una amplia variedad de especies, desde los grandes elefantes hasta los pequeños roedores.
                 </b-card-text>
 
-                <b-button @click="toggleAccordion3" variant="primary">Galeria de Mamíferos</b-button> <b-badge variant="light">Nuevo</b-badge>
+                <b-button @click="toggleAccordion3" variant="primary" v-b-popover.hover.left="'Abre la Galeria de los Mamíferos'" title="Galeria de los Mamíferos">Galeria de Mamíferos</b-button> <b-badge variant="light">Nuevo</b-badge>
                 <b-collapse v-model="showAccordion3">
                     <b-card-body>
                     <!-- Inicio de Especies -->
